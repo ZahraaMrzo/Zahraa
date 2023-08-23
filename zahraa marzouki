@@ -1,0 +1,4 @@
+$('#root a').click(function(e) {
+    if ( $(this).parents('ul').length > 1 ) {
+       e.preventDefault(); // cancel action for anchors inside of #root who have multiple parent list elements 
+    }
